@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+backend/venv/
+
+# Data & Models (auto-generated)
+data/
+models/
+*.db
+*.pkl
+*.pt
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/tsc_out.txt
+frontend/tsc_errs.log
+frontend/tsc_errors.txt
+
+# Logs
+*.log
+
+Plan.md
+Implementation.md
+audit_report.md

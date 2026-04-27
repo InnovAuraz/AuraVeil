@@ -1,0 +1,14 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+psutil>=5.9.0
+watchdog>=4.0.0
+scapy>=2.5.0
+scikit-learn>=1.4.0
+numpy>=1.26.0
+joblib>=1.3.0
+
+# Optional: PyTorch (CPU-only) for LSTM sequence detection
+# Install separately: pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# Optional: SHAP for model explainability
+# Install separately: pip install shap>=0.45.0
