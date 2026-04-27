@@ -1,0 +1,26 @@
+name: Repo Visualizer
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  diagram:
+    name: Update Repo Diagram
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate repo diagram
+        uses: githubocto/repo-visualizer@0.9.0
+        with:
+          output_file: "diagram.svg"
+          excluded_paths: "node_modules,dist,build,.git"
+          commit_message: "chore: update repo visualization diagram"
